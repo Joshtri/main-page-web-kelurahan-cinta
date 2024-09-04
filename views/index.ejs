@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="/logo_kot_kupang.webp">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #FFF8E8;
+            font-family: 'Barlow', sans-serif;
+        }
+
+        .btn-custom {
+            background-color: #125B9A;
+            border-color: #125B9A;
+            color: white;
+        }
+
+        .btn-custom:hover {
+            background-color: #0F4B7A;
+            border-color: #0F4B7A;
+            color: #FFF8E8;
+        }
+
+        .header-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #125B9A;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-subtitle {
+            font-size: 1.2rem;
+            color: #444;
+        }
+    </style>
+</head>
+
+<body>
+
+    <%- include('partials/header'); %>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row p-4">
+            <div class="col-12">
+                <h2 class="text-center animate__animated animate__fadeInDown header-title">Selamat Datang di Kelurahan Cinta Statistik Kota Kupang</h2>
+                <p class="text-center mt-3 mb-4 animate__animated animate__fadeInUp header-subtitle">
+                    Halaman ini menyediakan akses data dan statistik UMKM di beberapa kelurahan di Kota Kupang.
+                    Anda dapat memilih kelurahan yang ingin Anda lihat dengan mengklik salah satu opsi di bawah ini.
+                    Setiap kelurahan memiliki data yang dirancang untuk membantu Anda memahami perkembangan UMKM di area tersebut.
+                </p>
+            </div>
+
+            <!-- Card 1: Oetete -->
+            <div class="col-md-4 mb-3 animate__animated animate__fadeInLeft">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Kelurahan Oetete</h5>
+                        <p class="card-text">Lihat data dan statistik untuk kelurahan Oetete.</p>
+                        <a href="https://weboetete.kupangkota.go.id/" class="btn btn-custom">Web Oetete</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Oebufu -->
+            <div class="col-md-4 mb-3 animate__animated animate__fadeInUp">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Kelurahan Oebufu</h5>
+                        <p class="card-text">Lihat data dan statistik untuk kelurahan Oebufu.</p>
+                        <a href="https://weboebufu.kupangkota.go.id/" class="btn btn-custom">Web Oebufu</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Fontein -->
+            <div class="col-md-4 mb-3 animate__animated animate__fadeInRight">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Kelurahan Fontein</h5>
+                        <p class="card-text">Lihat data dan statistik untuk kelurahan Fontein.</p>
+                        <a href="https://webfontein.kupangkota.go.id/" class="btn btn-custom">Web Fontein</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

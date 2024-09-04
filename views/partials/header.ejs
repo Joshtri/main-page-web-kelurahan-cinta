@@ -1,0 +1,44 @@
+<!-- partials/header.html -->
+
+
+<link rel="stylesheet" href="/style.css" />
+
+
+<div class="container-fluid p-0">
+  <nav class="navbar navbar-expand-lg flex-nowrap px-md-5 bg-bluedark">
+    <div class="container-fluid mt-2 mb-2">
+      <a class="navbar-brand" href="#">
+        <img
+          src="/header-logo v2.webp"
+          alt="Logo Kelurahan Oetete"
+          id="logo"
+        />
+      </a>
+    </div>
+  </nav>
+</div>
+
+
+<style>
+  /* style.css */
+
+  /* Responsiveness for logo */
+  #logo {
+    width: 100%; /* Ukuran lebar gambar 100% agar lebih besar di mobile */
+    height: auto; /* Menjaga proporsi gambar */
+    max-width: 370px; /* Lebar maksimum gambar, agar tidak terlalu besar di layar besar */
+  }
+
+  /* Customizing toggler icon size */
+  #toggle {
+    width: 20px; /* Ukuran ikon toggle */
+    height: 20px;
+  }
+
+  /* Media query untuk mengatur ukuran logo di tampilan mobile */
+  @media (min-width: 768px) {
+    #logo {
+      width: 370px; /* Ukuran logo di layar yang lebih besar */
+    }
+  }
+</style>
