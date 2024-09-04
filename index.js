@@ -18,8 +18,8 @@ const __dirname = dirname(__filename);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.set('view engine', 'ejs')
 app.use('/', indexRoute)
+app.set('view engine', 'ejs')
 
 
 // Middleware untuk menangani kesalahan 404
